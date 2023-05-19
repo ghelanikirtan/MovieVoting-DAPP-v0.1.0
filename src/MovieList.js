@@ -5,29 +5,42 @@ const MovieList = ({ contract }) => {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   useEffect(() => {
-    fetchMovies();
-  }, []);
+    if (contract) {
+      fetchMovies();
+    }
+  }, [contract]);
 
   const fetchMovies = async () => {
-    const totalMovies = await contract.totalMovies();
-    const moviesData = [];
+    try {
+      const totalMovies = await contract.getTotalMovies();
+      const moviesData = [];
 
-    for (let i = 1; i <= totalMovies; i++) {
-      const movie = await contract.movies(i);
-      moviesData.push(movie);
+      for (let i = 1; i <= totalMovies; i++) {
+        const movie = await contract.movies(i);
+        moviesData.push({
+          id: movie.id.toNumber(),
+          title: movie.title,
+          goodVotes: movie.goodVotes.toNumber(),
+          badVotes: movie.badVotes.toNumber(),
+          isVotingOpen: movie.isVotingOpen,
+        });
+      }
+
+      setMovies(moviesData);
+    } catch (error) {
+      console.error("Failed to fetch movies", error);
     }
-
-    setMovies(moviesData);
   };
 
-  const casteVote = async (movieId, isGoodVote) => {
+  const castVote = async (movieId, isGoodVote) => {
     await contract.castVote(movieId, isGoodVote);
-    fetchMovies();
+    // fetchMovies();
   };
 
   return (
     <div>
       <h2>Movies:</h2>
+      {console.log(movies)}
       <ul>
         {movies.map((movie) => (
           <li key={movie.id}>
