@@ -1,4 +1,14 @@
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 import React, { useState, useEffect } from "react";
+import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
+import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
+
+import "./MovieList.css";
 
 const MovieList = ({ contract }) => {
   const [movies, setMovies] = useState([]);
@@ -39,27 +49,42 @@ const MovieList = ({ contract }) => {
 
   return (
     <div>
-      <h2>Movies:</h2>
-      {console.log(movies)}
-      <ul>
+      
+      <div className='cardList'>
         {movies.map((movie) => (
-          <li key={movie.id}>
-            <span>Title: {movie.title}</span>
-            <span>Good Votes: {movie.goodVotes}</span>
-            <span>Bad Votes: {movie.badVotes}</span>
-            {movie.isVotingOpen && (
-              <div>
-                <button onClick={() => castVote(movie.id, true)}>
-                  Good Vote
-                </button>
-                <button onClick={() => castVote(movie.id, false)}>
-                  Bad Vote
-                </button>
+          <div className='card'>
+          <Card sx={{ maxWidth: 345 }} key={movie.id}>
+            <CardMedia
+              sx={{ height: 140 }}
+              image=""
+              title='image'
+            />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+            {movie.title}
+          </Typography>
+          
+          <Typography variant="body2" color="text.secondary">
+            <div style={{ width: '100%', height: '20px', backgroundColor: '#ddd', borderRadius: '10px', position: 'relative' }}>
+              <div style={{ width: `${(movie.goodVotes / (movie.goodVotes + movie.badVotes)) * 100}%`, height: '100%', backgroundColor: 'green  ', borderRadius: '10px' }}>
               </div>
-            )}
-          </li>
-        ))}
-      </ul>
+            </div>
+
+          </Typography>
+        </CardContent>
+        
+        <CardActions style={{ justifyContent: 'center' }}>
+          <Button size="small" onClick={() => castVote(movie.id, true)}><ThumbUpAltIcon/></Button>
+
+          <Button size="small" onClick={() => castVote(movie.id, false)}><ThumbDownAltIcon/></Button>
+        </CardActions>
+        
+        
+      </Card>
+      </div>
+      ))
+      }
+      </div>
     </div>
   );
 };

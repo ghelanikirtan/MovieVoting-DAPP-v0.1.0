@@ -9,6 +9,7 @@ function App() {
   const [contract, setContract] = useState(null);
   const [account, setAccount] = useState(null);
   const [movieTitle, setMovieTitle] = useState("");
+  
 
   // Connect to the contract on component mount
   useEffect(() => {
@@ -66,6 +67,7 @@ function App() {
             placeholder="Enter movie title here..."
           />
           <button onClick={handleAddMovie}>Add Movie</button>
+
           <MovieList contract={contract} />
         </div>
       }
