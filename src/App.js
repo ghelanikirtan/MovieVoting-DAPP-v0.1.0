@@ -39,7 +39,6 @@ function App() {
   const requestAccount = async () => {
     await window.ethereum.request({ method: "eth_requestAccounts" });
   };
-  // console.log();
 
   // API fetch all movie list for validation here and call it on handleAddMovie function
 
