@@ -1,4 +1,4 @@
-# VoteFlicks
+# VoteFlicks []('./public/voteFlicks.png')
 
 ## Overview
 
