@@ -1,4 +1,4 @@
-# VoteFlicks ![VoteFlicks]('./public/voteFlicks.png {width=40px height=400px})
+# VoteFlicks ![VoteFlicks](./public/voteFlicks.png {width=40px height=400px})
 
 ## Overview
 
