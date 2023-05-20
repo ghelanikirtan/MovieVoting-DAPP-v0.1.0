@@ -1,4 +1,4 @@
-# VoteFlicks ![VoteFlicks](/public/voteFlicks.png)
+# VoteFlicks ![VoteFlicks](/public/voteFlicks.png={20x20})
 
 ## Overview
 
@@ -22,6 +22,9 @@ This project is a decentralised application (DApp) called "VoteFlicks" that is b
 # Sponsor Track Selection
 
 This project targets Polygon for contract deployment and Filecoin for overall deployment, facilitated by Spheron. This selection was made due to the unique advantages offered by these platforms.
+- Contract Deployment : Polygon mumbai testnet (Contract Address: )
+- Project Deployment : Spheron via FileCoin (Deployment Link: )
+
 
 ## Polygon Contract Deployment
 
