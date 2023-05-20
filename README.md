@@ -40,7 +40,7 @@ Spheron is a decentralized platform that makes it easier to develop, deploy, and
 
 To deploy the application with Spheron on Filecoin, follow the instructions in the official Spheron documentation.
 
-**NOTE**: You need to ensure you have sufficient FIL (Filecoin's native token) to pay for the storage service.
+> **NOTE**: You need to ensure you have sufficient FIL (Filecoin's native token) to pay for the storage service.
 
 By leveraging Polygon and Filecoin through Spheron, we ensure that our Movie Voting System is not only scalable and efficient but also securely and reliably stored. These selections reflect our commitment to building robust, decentralized applications that harness the full potential of blockchain technology.
 
