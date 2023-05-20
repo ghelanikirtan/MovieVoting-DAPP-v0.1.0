@@ -9,8 +9,9 @@ This project is a decentralised application (DApp) called "VoteFlicks" that is b
 - **Solidity**: Used for writing smart contracts that power the voting system
 - **React JS**: Used for developing the user interface of the system
 - **Ethers**: Used for interaction between the React JS front-end and the Ethereum blockchain
-- **Spheron**: Platform used to deploy the DApp
-- **Filecoin**: Used for decentralized storage
+- **Spheron**: Platform used to deploy the DApp 
+- **Filecoin**: Used for decentralized storage (via Spheron)
+- **Polygon Mumbai Testnet**: Smart contract Deployment
 
 ## Features
 
