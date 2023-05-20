@@ -1,4 +1,4 @@
-# VoteFlicks ![VoteFlicks](./public/voteFlicks.png =20X20)
+# VoteFlicks ![VoteFlicks]('./public/voteFlicks.png {width=40px height=400px})
 
 ## Overview
 
@@ -97,10 +97,6 @@ The project is deployed on Spheron using Filecoin for storage. If you want to de
 ## Contributing
 
 We welcome contributions from the community. If you wish to contribute, please take a moment to review our Contributing Guidelines.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 Happy Hacking!
 
