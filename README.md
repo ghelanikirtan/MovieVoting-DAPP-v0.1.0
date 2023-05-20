@@ -22,8 +22,8 @@ This project is a decentralised application (DApp) called "VoteFlicks" that is b
 # Sponsor Track Selection
 
 This project targets Polygon for contract deployment and Filecoin for overall deployment, facilitated by Spheron. This selection was made due to the unique advantages offered by these platforms.
-
 <br>
+
 ## Polygon Contract Deployment
 
 Polygon is a protocol and a framework for building and connecting Ethereum-compatible blockchain networks. It effectively transforms Ethereum into a full-fledged multi-chain system. Deploying the contract on Polygon provides us with scalability and flexibility while staying in the Ethereum ecosystem. 
