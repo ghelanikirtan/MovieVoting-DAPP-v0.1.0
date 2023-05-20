@@ -27,7 +27,7 @@ This project targets Polygon for contract deployment and Filecoin for overall de
 ## Polygon Contract Deployment
 
 Polygon is a protocol and a framework for building and connecting Ethereum-compatible blockchain networks. It effectively transforms Ethereum into a full-fledged multi-chain system. Deploying the contract on Polygon provides us with scalability and flexibility while staying in the Ethereum ecosystem. 
-> Contract Deployment : Polygon mumbai testnet (Contract Address: 0x58165D1783594a1683741330A4F58d9248d77d1A)
+> Contract Deployment : Polygon mumbai testnet *(Contract Address: 0x58165D1783594a1683741330A4F58d9248d77d1A)*
 <br>
 
 ## Filecoin Deployment with Spheron  [Project Link: [Vote Flicks 🔗](https://movievoting-dapp-v0-1-0-33788b.spheron.app/)]
