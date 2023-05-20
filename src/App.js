@@ -47,7 +47,7 @@ function App() {
   // const requestAccount = async () => {
   //   await window.ethereum.request({ method: "eth_requestAccounts" });
   // };
-  
+
   const connectWallet = async () => {
     try {
       // await window.ethereum.request({ method: "eth_requestAccounts" });
@@ -72,30 +72,31 @@ function App() {
 
   return (
     <>
-    <div className="App">
-      <h1>MOVIE VOTING <span>DAPP</span></h1>
+      <div className="App">
+        <h1>
+          VOTE<span>FLICKS</span>
+        </h1>
 
-      {/* {account && <p>Connected Account: {account}</p>} */}
-      {
-        <div>
-          <input
-            type="text"
-            value={movieTitle}
-            onChange={(e) => setMovieTitle(e.target.value)}
-            placeholder="Enter movie title here..."
+        {/* {account && <p>Connected Account: {account}</p>} */}
+        {
+          <div>
+            <input
+              type="text"
+              value={movieTitle}
+              onChange={(e) => setMovieTitle(e.target.value)}
+              placeholder="Enter movie title here..."
             />
-          <button className="add-btn" onClick={handleAddMovie}>Add Movie</button>
-
-        </div>
-      }
-      {!isWalletConnected && (
-        <button onClick={connectWallet}>Connect Wallet</button>
+            <button className="add-btn" onClick={handleAddMovie}>
+              Add Movie
+            </button>
+          </div>
+        }
+        {!isWalletConnected && (
+          <button onClick={connectWallet}>Connect Wallet</button>
         )}
-
-
-    </div>
-    <MovieList contract={contract} />
-        </>
+      </div>
+      <MovieList contract={contract} />
+    </>
   );
 }
 
