@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# VoteFlicks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a decentralised application (DApp) called "VoteFlicks" that is built on the Ethereum blockchain using Solidity for smart contracts, React JS for the front-end interface, and Ethers for interaction between the front-end and the blockchain. It allows users to vote for their favorite movies in a transparent, secure and tamper-proof manner. The project is deployed on Spheron using Filecoin for decentralized storage.
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- **Solidity**: Used for writing smart contracts that power the voting system
+- **React JS**: Used for developing the user interface of the system
+- **Ethers**: Used for interaction between the React JS front-end and the Ethereum blockchain
+- **Spheron**: Platform used to deploy the DApp
+- **Filecoin**: Used for decentralized storage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Users can vote for their favorite movies
+- Display of vote counts
+- Tamper-proof system ensuring the security and integrity of votes
+- Transparent voting process visible on the blockchain
 
-### `npm test`
+# Sponsor Track Selection
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project targets Polygon for contract deployment and Filecoin for overall deployment, facilitated by Spheron. This selection was made due to the unique advantages offered by these platforms.
 
-### `npm run build`
+## Polygon Contract Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Polygon is a protocol and a framework for building and connecting Ethereum-compatible blockchain networks. It effectively transforms Ethereum into a full-fledged multi-chain system. Deploying the contract on Polygon provides us with scalability and flexibility while staying in the Ethereum ecosystem. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Filecoin Deployment with Spheron
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Filecoin is a decentralized storage system that aims to “store humanity’s most important information". It has been chosen for deployment due to its efficient and robust storage capabilities. 
 
-### `npm run eject`
+Spheron is a decentralized platform that makes it easier to develop, deploy, and run applications on the blockchain. It's been selected for its ease of use and wide support for various blockchain and storage technologies. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To deploy the application with Spheron on Filecoin, follow the instructions in the official Spheron documentation.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**NOTE**: You need to ensure you have sufficient FIL (Filecoin's native token) to pay for the storage service.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+By leveraging Polygon and Filecoin through Spheron, we ensure that our Movie Voting System is not only scalable and efficient but also securely and reliably stored. These selections reflect our commitment to building robust, decentralized applications that harness the full potential of blockchain technology.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Before you can run this project, you need to install `Node.js` and `npm` (Node package manager). If you haven't installed these yet, you can download them [here](https://nodejs.org/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Clone the Repository
 
-### Code Splitting
+```bash
+git clone https://github.com/ghelanikirtan/voteFlicks-dapp-v0.1.0
+cd voteFlicks-dapp-v0.1.0
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Install Dependencies
 
-### Analyzing the Bundle Size
+Inside the project directory, run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm install
+```
 
-### Making a Progressive Web App
+This command installs the necessary packages for the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Configuration
 
-### Advanced Configuration
+1. Deploy the smart contract on Ethereum. You will need the contract's address for the next step.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Create a `.env` file in the root of the project. Add the contract's address and your Ethereum wallet's private key (used for deploying the contract).
 
-### Deployment
+```bash
+REACT_APP_CONTRACT_ADDRESS=your_contract_address
+REACT_APP_PRIVATE_KEY=your_private_key
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**IMPORTANT**: Never share your private keys. Always keep them secret.
 
-### `npm run build` fails to minify
+### Run the Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To run the application, use the command:
+
+```bash
+npm start
+```
+
+## Testing
+
+To run tests, use the command:
+
+```bash
+npm test
+```
+
+## Deployment
+
+The project is deployed on Spheron using Filecoin for storage. If you want to deploy an updated version of the application, follow the instructions in the official Spheron documentation.
+
+## Contributing
+
+We welcome contributions from the community. If you wish to contribute, please take a moment to review our Contributing Guidelines.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Happy Hacking!
+
+ 
