@@ -18,23 +18,23 @@ This project is a decentralised application (DApp) called "VoteFlicks" that is b
 - Display of vote counts
 - Tamper-proof system ensuring the security and integrity of votes
 - Transparent voting process visible on the blockchain
-
+---
 # Sponsor Track Selection
 
 This project targets Polygon for contract deployment and Filecoin for overall deployment, facilitated by Spheron. This selection was made due to the unique advantages offered by these platforms.
-- Project Deployment : Spheron via FileCoin (Deployment Link: https://movievoting-dapp-v0-1-0-33788b.spheron.app/)
+> Project Deployment : Spheron via FileCoin (Deployment Link: https://movievoting-dapp-v0-1-0-33788b.spheron.app/)
 
 
-## Polygon Contract Deployment [Project Link: [Vote Flicks](https://movievoting-dapp-v0-1-0-33788b.spheron.app/)]
+## Polygon Contract Deployment
 
 Polygon is a protocol and a framework for building and connecting Ethereum-compatible blockchain networks. It effectively transforms Ethereum into a full-fledged multi-chain system. Deploying the contract on Polygon provides us with scalability and flexibility while staying in the Ethereum ecosystem. 
-- Contract Deployment : Polygon mumbai testnet (Contract Address: 0x58165D1783594a1683741330A4F58d9248d77d1A)
+> Contract Deployment : Polygon mumbai testnet (Contract Address: 0x58165D1783594a1683741330A4F58d9248d77d1A)
 
-## Filecoin Deployment with Spheron
+## Filecoin Deployment with Spheron  [Project Link: [Vote Flicks 🔗](https://movievoting-dapp-v0-1-0-33788b.spheron.app/)]
+
 
 Filecoin is a decentralized storage system that aims to “store humanity’s most important information". It has been chosen for deployment due to its efficient and robust storage capabilities. 
 - Project Deployment : Spheron via FileCoin
-
 
 Spheron is a decentralized platform that makes it easier to develop, deploy, and run applications on the blockchain. It's been selected for its ease of use and wide support for various blockchain and storage technologies. 
 
@@ -43,6 +43,8 @@ To deploy the application with Spheron on Filecoin, follow the instructions in t
 **NOTE**: You need to ensure you have sufficient FIL (Filecoin's native token) to pay for the storage service.
 
 By leveraging Polygon and Filecoin through Spheron, we ensure that our Movie Voting System is not only scalable and efficient but also securely and reliably stored. These selections reflect our commitment to building robust, decentralized applications that harness the full potential of blockchain technology.
+
+---
 
 
 ## Installation
