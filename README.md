@@ -1,4 +1,4 @@
-# VoteFlicks ![VoteFlicks](./public/voteFlicks.png={20x20})
+# VoteFlicks ![](./public/voteFlicks.png={20x20})
 
 ## Overview
 
@@ -22,17 +22,19 @@ This project is a decentralised application (DApp) called "VoteFlicks" that is b
 # Sponsor Track Selection
 
 This project targets Polygon for contract deployment and Filecoin for overall deployment, facilitated by Spheron. This selection was made due to the unique advantages offered by these platforms.
-- Contract Deployment : Polygon mumbai testnet (Contract Address: )
-- Project Deployment : Spheron via FileCoin (Deployment Link: )
+- Project Deployment : Spheron via FileCoin (Deployment Link: https://movievoting-dapp-v0-1-0-33788b.spheron.app/)
 
 
-## Polygon Contract Deployment
+## Polygon Contract Deployment [Project Link: [Vote Flicks](https://movievoting-dapp-v0-1-0-33788b.spheron.app/)]
 
 Polygon is a protocol and a framework for building and connecting Ethereum-compatible blockchain networks. It effectively transforms Ethereum into a full-fledged multi-chain system. Deploying the contract on Polygon provides us with scalability and flexibility while staying in the Ethereum ecosystem. 
+- Contract Deployment : Polygon mumbai testnet (Contract Address: 0x58165D1783594a1683741330A4F58d9248d77d1A)
 
 ## Filecoin Deployment with Spheron
 
 Filecoin is a decentralized storage system that aims to “store humanity’s most important information". It has been chosen for deployment due to its efficient and robust storage capabilities. 
+- Project Deployment : Spheron via FileCoin
+
 
 Spheron is a decentralized platform that makes it easier to develop, deploy, and run applications on the blockchain. It's been selected for its ease of use and wide support for various blockchain and storage technologies. 
 
