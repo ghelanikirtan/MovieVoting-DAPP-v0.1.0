@@ -5,15 +5,19 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import React, { useState, useEffect } from "react";
-import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
-import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
+// import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
+// import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
 import axios from "axios";
 
 import "./MovieList.css";
+// require('dotenv').config();
+// import { DotenvConfigOptions } from 'dotenv';
 
+const API_KEY = '811e1216dfe2fe663ca24b8f2386f18d';
+// const api_key = process.env.API_KEY;
 const MovieList = ({ contract }) => {
   const [movies, setMovies] = useState([]);
-  const [selectedMovie, setSelectedMovie] = useState(null);
+  // const [selectedMovie, setSelectedMovie] = useState(null);
 
   useEffect(() => {
     if (contract) {
@@ -37,9 +41,36 @@ const MovieList = ({ contract }) => {
           imageUrl: "",
         };
 
-        const response = await axios.get(`http://www.omdbapi.com/?t=${encodeURIComponent(movie.title)}&apikey=1de49c7a`);
-        if (response.data && response.data.Poster) {
-          movieData.imageUrl = response.data.Poster;
+        // `https://api.themoviedb.org/3/movie/${movie.id}/images`
+
+        const URLify = (string) => {
+          return string.trim().replace(/\s/g, '%20');
+        }
+
+
+
+        const api_Search = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${movie.title}&include_adult=false&language=en-US&page=1`; 
+
+        // const reqURL =`https://api.themoviedb.org/3/search/movie?query=${movie.title}&include_adult=false&language=en-US&page=1`;
+        // const tempURL = reqURL.replaceAll(" ","%");
+        // console.log(URLify(api_Search));
+       
+        // const response = await axios.get(
+        //   URLify(api_Search),
+        //   {
+        //     params: {
+        //       api_key: API_KEY
+        //     }
+        //   }
+        // );
+        const response = await axios.get(URLify(api_Search));
+        // console.log(response.data.results[0].poster_path)
+        const imageUrl = response.data.results[0].poster_path;
+        // console.log(movie.title);
+        const imageBaseUrl = 'https://image.tmdb.org/t/p/';
+        const imageSize = 'w500';
+        if (response.data) {
+          movieData.imageUrl =`${imageBaseUrl}${imageSize}${imageUrl}`;
         }
 
         moviesData.push(movieData);
@@ -68,7 +99,7 @@ const MovieList = ({ contract }) => {
           <div className='card'>
           <Card sx={{ maxWidth: 345 }} key={movie.id}>
             <CardMedia
-              sx={{ height: 140 }}
+              sx={{ height: 200 }}
               image={movie.imageUrl}
               title={movie.title}
             />
