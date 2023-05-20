@@ -53,7 +53,7 @@ const MovieList = ({ contract }) => {
 
         // const reqURL =`https://api.themoviedb.org/3/search/movie?query=${movie.title}&include_adult=false&language=en-US&page=1`;
         // const tempURL = reqURL.replaceAll(" ","%");
-        console.log(URLify(api_Search));
+        // console.log(URLify(api_Search));
        
         // const response = await axios.get(
         //   URLify(api_Search),
