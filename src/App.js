@@ -27,7 +27,7 @@ function App() {
       // await requestAccount();
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
-      const contractAddress = "0x06298174Fed757B28f043B9473D3414aCC6f37cA";
+      const contractAddress = "0x58165D1783594a1683741330A4F58d9248d77d1A";
       const contractAbi = abi;
 
       const movieContract = new ethers.Contract(
@@ -73,7 +73,7 @@ function App() {
   return (
     <>
     <div className="App">
-      <h1>MOVIE VOTING DAPP</h1>
+      <h1>MOVIE VOTING <span>DAPP</span></h1>
 
       {/* {account && <p>Connected Account: {account}</p>} */}
       {
@@ -91,8 +91,10 @@ function App() {
       {!isWalletConnected && (
         <button onClick={connectWallet}>Connect Wallet</button>
         )}
+
+
     </div>
-        <MovieList contract={contract} />
+    <MovieList contract={contract} />
         </>
   );
 }
