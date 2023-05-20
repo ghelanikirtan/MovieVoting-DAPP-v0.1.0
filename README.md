@@ -4,7 +4,14 @@
 
 This project is a decentralised application (DApp) called "VoteFlicks" that is built on the Ethereum blockchain using Solidity for smart contracts, React JS for the front-end interface, and Ethers for interaction between the front-end and the blockchain. It allows users to vote for their favorite movies in a transparent, secure and tamper-proof manner. The project is deployed on Spheron using Filecoin for decentralized storage.
 
-## Tech Stack
+## Project Deployment Link:
+
+- **SPHERON (FileCoin-IPFS) : [https://movievoting-dapp-v0-1-0-33788b.spheron.app/](https://movievoting-dapp-v0-1-0-33788b.spheron.app/)**
+- **SPHERON (Deployment Preview) : [https://bafybeiesxy663sg7rqxrffb3f64mznah4jt7rke2z2w3ty3mmedzg3lwme.ipfs.sphn.link/](https://bafybeiesxy663sg7rqxrffb3f64mznah4jt7rke2z2w3ty3mmedzg3lwme.ipfs.sphn.link/)**
+- **VERCEL (Normal Deployment) : [https://vote-flicks-dapp-v0-1-0.vercel.app/](https://vote-flicks-dapp-v0-1-0.vercel.app/)**
+
+## Tech Stack[
+](https://movievoting-dapp-v0-1-0-33788b.spheron.app/)
 
 - **Solidity**: Used for writing smart contracts that power the voting system
 - **React JS**: Used for developing the user interface of the system
