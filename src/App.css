@@ -4,19 +4,18 @@
 
 .App {
   text-align: center;
-  background-color: #f0f0f0;
-}
-
-/* Rest of the CSS styles... */
-
-
-.App {
+  /* background-color: #f0f0f0; */
+  background-color: #0d0d0d;
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center; 
   padding: .5em;
+  color: aliceblue;
+}
 
+.App h1 span{
+  color: #9f7aea;
 }
 
 .App-logo {
@@ -47,7 +46,8 @@
 }
 
 .App-link {
-  color: #61dafb;
+  /* color: #61dafb; */
+  color: #9f7aea;
 }
 
 @keyframes App-logo-spin {
@@ -72,7 +72,7 @@ input[type="text"] {
   width: 300px;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #007bff;
+  border: 1px solid #9f7aea;
   /* border-radius: 4px; */
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -82,7 +82,7 @@ input[type="text"] {
 button {
   
   padding: 15px 30px;
-  background-color: #007bff;
+  background-color: #9f7aea;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -95,11 +95,11 @@ button {
   border-radius: 0px;
   border-top-right-radius: 20px; 
   border-bottom-right-radius: 20px;
-  border: 1px solid #007bff;
+  border: 1px solid #9f7aea;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #9f7aea;
 }
 
 .movie-list-container {
