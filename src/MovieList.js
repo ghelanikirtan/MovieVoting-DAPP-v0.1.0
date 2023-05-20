@@ -43,8 +43,11 @@ const MovieList = ({ contract }) => {
   };
 
   const castVote = async (movieId, isGoodVote) => {
-    await contract.castVote(movieId, isGoodVote);
-    // fetchMovies();
+    try{await contract.castVote(movieId, isGoodVote);
+    }catch{
+      alert("you've already voted once for this movie!")
+    }
+      // fetchMovies();
   };
 
   return (
